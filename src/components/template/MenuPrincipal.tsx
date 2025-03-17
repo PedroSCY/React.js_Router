@@ -1,4 +1,4 @@
-import { IconDirectionSign, IconFileAlert, IconLayoutNavbarCollapse, IconMenu, IconX } from "@tabler/icons-react";
+import { IconDirectionSign, IconFileAlert, IconLayoutNavbarCollapse, IconMenu, IconRoute, IconSearch, IconX } from "@tabler/icons-react";
 import { MenuItem } from "../../data/models/MenuItem";
 import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
@@ -9,6 +9,8 @@ const itens: MenuItem[] = [
     {titulo: "Tipos de Links", url:"/tiposDeLinks", icone:<IconLayoutNavbarCollapse/>},
     {titulo: "Navegação com NavLink", url:"/navegacaoComNavLink", icone:<IconDirectionSign/>},
     {titulo: "Página 404", url:"/pagina404", icone:<IconFileAlert/>},
+    {titulo: "Parâmetros de Rota", url:"/parametrosDeRota", icone:<IconRoute/>},
+    {titulo: "Parâmetros de Busca", url:"/parametrosDeBusca", icone:<IconSearch/>},
 ];
 
 export default function MenuPrincipal() {
