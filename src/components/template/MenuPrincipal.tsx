@@ -1,11 +1,14 @@
-import { IconMenu, IconX } from "@tabler/icons-react";
+import { IconDirectionSign, IconLayoutNavbarCollapse, IconMenu, IconX } from "@tabler/icons-react";
 import { MenuItem } from "../../data/models/MenuItem";
 import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
 import Flex from "./Flex";
 import { useState } from "react";
 
-const itens: MenuItem[] = [];
+const itens: MenuItem[] = [
+    {titulo: "Tipos de Links", url:"/tiposDeLinks", icone:<IconLayoutNavbarCollapse/>},
+    {titulo: "Navegação com NavLink", url:"/navegacaoComNavLink", icone:<IconDirectionSign/>},
+];
 
 export default function MenuPrincipal() {
     const [mini, setMini] = useState(false);

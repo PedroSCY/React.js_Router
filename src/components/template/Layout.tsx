@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import MenuPrincipal from "./MenuPrincipal";
 import Cabecalho from "./Cabecalho";
 import Conteudo from "./Conteudo";
