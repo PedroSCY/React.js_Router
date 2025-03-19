@@ -15,6 +15,7 @@ const itens: MenuItem[] = [
     {titulo: "Entendendo Actions", url:"/entendendoActions", icone:<IconActivity/>},
     {titulo: "Entendendo Loaders", url:"/entendendoLoaders", icone:<IconLoader/>},
     {titulo: "Lidando Com erros do Loader", url:"/lidandoComErrosDoLoader", icone:<IconRefreshAlert/>},
+    {titulo: "Entendendo Loaders Com Response", url:"/entendendoLoadersComResponse", icone:<IconRefreshAlert/>},
 ];
 
 export default function MenuPrincipal() {
