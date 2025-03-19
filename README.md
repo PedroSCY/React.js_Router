@@ -10,7 +10,7 @@ Este repositório serve como um registro da minha jornada estudando e aplicando 
 ## 🌎 Demonstração
 
 Você pode visualizar o projeto em funcionamento acessando:  
-🔗 **[link-do-projeto]**
+🔗 **[Em Breve]**
 
 ## 📂 O que você encontrará aqui?
 
