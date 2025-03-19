@@ -23,7 +23,6 @@ export default function VisualizarProduto() {
 
 export async function pegarProduto({params}) {
   return await fetch(`https://fakestoreapi.com/products/${params.id}`)
-
 }
 
 // Aqui me perguntei como passaria os parametros para o loader, dai lembrei que tanto o loader quando a action recebem um objeto com informações, uma delas é o params que contem os parametros da rota.

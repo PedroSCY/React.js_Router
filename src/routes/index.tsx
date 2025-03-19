@@ -13,6 +13,7 @@ import rotasParamentrosDeBusca from "./parametrosDeBusca";
 import rotasEntendendoUseLocation from "./entendendoUseLocation";
 import rotasEntendendoActions from "./entendendoActions";
 import rotasEntendendoLoaders from "./entendendoLoaders"
+import rotasLidandoComErrosDoLoader from "./lidandoComErrosDoLoader";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       {rotasEntendendoUseLocation}
       {rotasEntendendoActions}
       {rotasEntendendoLoaders}
+      {rotasLidandoComErrosDoLoader}
       <Route path="*" element={<Pagina404 />} />
     </Route>
   )

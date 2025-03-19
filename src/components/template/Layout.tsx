@@ -15,7 +15,7 @@ export default function Layout(props: LayoutProps) {
   return (
     <div
       className={`
-            flex h-screen w-screen
+            flex h-full w-full
             bg-zinc-900 text-white
         `}
     >
