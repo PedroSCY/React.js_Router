@@ -16,6 +16,7 @@ import rotasEntendendoLoaders from "./entendendoLoaders"
 import rotasLidandoComErrosDoLoader from "./lidandoComErrosDoLoader";
 import rotasEntendendoLoadersComResponse from "./entendendoLoaderComResponse";
 import rotasEntendendoUseRouteError from "./entendendoUseRouteError";
+import rotasUsandoLoaderDeOutraRota from "./usandoLoaderDeOutraRota";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
       {rotasLidandoComErrosDoLoader}
       {rotasEntendendoLoadersComResponse}
       {rotasEntendendoUseRouteError}
+      {rotasUsandoLoaderDeOutraRota}
       <Route path="*" element={<Pagina404 />} />
     </Route>
   )

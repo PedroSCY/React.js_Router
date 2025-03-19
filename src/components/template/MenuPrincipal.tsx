@@ -1,4 +1,4 @@
-import { IconActivity, IconDirectionSign, IconFileAlert, IconLayoutNavbarCollapse, IconLoader, IconLocation, IconMenu, IconRefreshAlert, IconRoute, IconRouteOff, IconSearch, IconX } from "@tabler/icons-react";
+import { IconActivity, IconDirectionSign, IconFileAlert, IconLayoutNavbarCollapse, IconLoader, IconLocation, IconMenu, IconRefreshAlert, IconRoute, IconRouteOff, IconSearch, IconShare, IconX } from "@tabler/icons-react";
 import { MenuItem } from "../../data/models/MenuItem";
 import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
@@ -17,6 +17,7 @@ const itens: MenuItem[] = [
     {titulo: "Lidando Com erros do Loader", url:"/lidandoComErrosDoLoader", icone:<IconRefreshAlert/>},
     {titulo: "Entendendo Loaders Com Response", url:"/entendendoLoadersComResponse", icone:<IconRefreshAlert/>},
     {titulo: "Entendendo UseRouteError", url:"/entendendoUseRouteError", icone:<IconRouteOff/>},
+    {titulo: "Usando Loader de Outra Rota", url:"/usandoLoaderDeOutraRota", icone:<IconShare/>},
 ];
 
 export default function MenuPrincipal() {
