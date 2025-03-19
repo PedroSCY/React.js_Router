@@ -1,4 +1,4 @@
-import { IconDirectionSign, IconFileAlert, IconLayoutNavbarCollapse, IconMenu, IconRoute, IconSearch, IconX } from "@tabler/icons-react";
+import { IconActivity, IconDirectionSign, IconFileAlert, IconLayoutNavbarCollapse, IconLocation, IconMenu, IconRoute, IconSearch, IconX } from "@tabler/icons-react";
 import { MenuItem } from "../../data/models/MenuItem";
 import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
@@ -11,6 +11,8 @@ const itens: MenuItem[] = [
     {titulo: "Página 404", url:"/pagina404", icone:<IconFileAlert/>},
     {titulo: "Parâmetros de Rota", url:"/parametrosDeRota", icone:<IconRoute/>},
     {titulo: "Parâmetros de Busca", url:"/parametrosDeBusca", icone:<IconSearch/>},
+    {titulo: "Entendendo useLocation", url:"/entendendoUseLocation", icone:<IconLocation/>},
+    {titulo: "Entendendo Actions", url:"/entendendoActions", icone:<IconActivity/>},
 ];
 
 export default function MenuPrincipal() {

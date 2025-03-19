@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 interface CorpoFormularioProps {
     nome: string;
     setNome: (s: string) => any;
@@ -16,7 +18,7 @@ export default function CorpoFormulario(props: CorpoFormularioProps) {
                 name="nome"
                 value={props.nome}
                 onChange={(e) => props.setNome(e.target.value)}
-                className="p-2 text-center text-black"
+                className="p-2 text-center text-black bg-zinc-200 rounded-md"
             />
             <label htmlFor="idade" className="mt-5 mb-2">
                 Quantos anos você tem?
@@ -26,7 +28,7 @@ export default function CorpoFormulario(props: CorpoFormularioProps) {
                 name="idade"
                 value={props.idade}
                 onChange={(e) => props.setIdade(+e.target.value)}
-                className="p-2 text-center text-black"
+                className="p-2 text-center text-black bg-zinc-200 rounded-md"
             />
             <button
                 className={`bg-zinc-700 mt-6 p-2 rounded-md 

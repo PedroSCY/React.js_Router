@@ -8,14 +8,21 @@ import rotasTiposDeLinks from "./tiposDeLinks";
 import rotasNavegacaoComNavLink from "./navegacaoComNavLink";
 import rotasPagina404 from "./pagina404";
 import Pagina404 from "../pages/shared/pagina404";
-import rotasParametrosDeRotas from "../routes/parametrosDeRota";
-import rotasParamentrosDeBusca from "../routes/parametrosDeBusca";
+import rotasParametrosDeRotas from "./parametrosDeRota";
+import rotasParamentrosDeBusca from "./parametrosDeBusca";
+import rotasEntendendoUseLocation from "./entendendoUseLocation";
+import rotasEntendendoActions from "./entendendoActions";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      {rotasTiposDeLinks},{rotasNavegacaoComNavLink},{rotasPagina404},
-      {rotasParametrosDeRotas}, {rotasParamentrosDeBusca}
+      {rotasTiposDeLinks}
+      {rotasNavegacaoComNavLink}
+      {rotasPagina404}
+      {rotasParametrosDeRotas}
+      {rotasParamentrosDeBusca}
+      {rotasEntendendoUseLocation}
+      {rotasEntendendoActions}
       <Route path="*" element={<Pagina404 />} />
     </Route>
   )
