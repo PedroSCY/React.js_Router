@@ -1,4 +1,4 @@
-import { IconActivity, IconClock, IconDirectionSign, IconFileAlert, IconLayoutNavbarCollapse, IconLoader, IconLocation, IconMenu, IconRefreshAlert, IconRoute, IconRouteOff, IconSearch, IconShare, IconX } from "@tabler/icons-react";
+import { IconActivity, IconClock, IconDirectionSign, IconExchange, IconFileAlert, IconLayoutNavbarCollapse, IconLoader, IconLocation, IconMenu, IconRefreshAlert, IconRoute, IconRouteOff, IconSearch, IconShare, IconX } from "@tabler/icons-react";
 import { MenuItem } from "../../data/models/MenuItem";
 import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
@@ -19,6 +19,7 @@ const itens: MenuItem[] = [
     {titulo: "Entendendo UseRouteError", url:"/entendendoUseRouteError", icone:<IconRouteOff/>},
     {titulo: "Usando Loader de Outra Rota", url:"/usandoLoaderDeOutraRota", icone:<IconShare/>},
     {titulo: "Adicionando Carregamento", url:"/adicionandoCarregamento", icone:<IconClock/>},
+    {titulo: "Entendendo useFetcher", url:"/entendendoUseFetcher", icone:<IconExchange/>},
 ];
 
 export default function MenuPrincipal() {
