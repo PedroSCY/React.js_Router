@@ -6,9 +6,10 @@ import { IconLoader2 } from "@tabler/icons-react";
 import { Suspense } from "react";
 
 export default function ProdutosCarregamento() {
-  const produtosLoader: any = useLoaderData();
+  const {produtos} = useLoaderData() 
+  // console.log(produtos)
 
-  const produtosEmItens = (p) =>
+  const produtosEmItens = (p: any) =>
     p.map((produto) => {
       return (
         <li
@@ -31,10 +32,8 @@ export default function ProdutosCarregamento() {
             </div>
           }
         >
-          <Await resolve={produtosLoader}>
-            {(produtos) => {
-              return produtosEmItens(produtos);
-            }}
+          <Await resolve={produtos}>
+            {produtosEmItens}
           </Await>
         </Suspense>
       </ul>
@@ -43,9 +42,13 @@ export default function ProdutosCarregamento() {
 }
 
 export async function pegarProdutos() {
-  const dados = await fetch("https://fakestoreapi.com/products?limit=10");
-  const dadosJson = await dados.json();
-  return dadosJson;
+  return {
+    produtos: fetch("https://fakestoreapi.com/products?limit=10").then((res) =>
+      res.json()
+    ),
+  };
 }
 
 /* Pra fazer com que o componente não espera o carregamento dos produtos para ser renderizado,renderizamos um componente do loading, pra fazer isso usamos o componente Suspense do react, que recebe uma propriedade chamada fallback, que é o componente que será renderizado enquanto o componente Await não for resolvido. e dentro do sustepense, usamos o componente Await, que recebe uma propriedade chamada resolve, que é a função que será chamada para resolver o componente, e dentro do componente Await, passamos uma função que recebe os dados que a função resolve retornou, e renderizamos o componente que queremos renderizar com os dados que a função resolve retornou.*/
+
+// O pegarProdutos esta retornando uma promisse dentro de um objeto para que o Route não tente resolver a promisse, dessa forma ela será resolvida pelo Await, isso serve pra que eu possa ver o componente de carregamento funcionando. (TEMPORARIO)
