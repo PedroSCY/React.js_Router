@@ -19,7 +19,7 @@ Você pode visualizar o projeto em funcionamento acessando:
 ✔️ Navegação entre páginas e componentes  
 ✔️ Uso de **`useNavigate`**, **`useParams`** e outras funções essenciais  
 ✔️ Estratégias de **loading** para otimizar o carregamento das páginas  
-✔️ Proteção de rotas e outros
+✔️ Actions e outros
 
 ## 🚀 Por que React Router DOM?
 
